@@ -4,21 +4,33 @@
 }
 header {
     height: 45px;
-    display: flex;
-    background-color:rgb(34, 49, 56);
+    display:flex;
+    background-color:rgb(29, 50, 61);
+    justify-content:space-between;
+    min-width:fit-content;
+}
+footer {
+    height: 25px;
+    display:flex;
+    background-color:rgb(29, 50, 61);
+    justify-content:center;
+    min-width:fit-content;
 }
 section {
     height: 50vh;
     display: flex;
-    border-bottom: 5px dashed rgb(216, 155, 24);
-    justify-content: center;
+    border-bottom: 5px dashed rgb(255, 143, 227);
     align-items: center;
+    padding:auto;
+    overflow: hidden;
 }
 #intro {
+    justify-content:center;
     background-image: url("pond.jpg");
     background-repeat: repeat-x;
 }
 #introtext {
+    justify-content:center;
     background-color:#ffffff;
     opacity: 0.9;
     border-radius: 15px;
@@ -27,22 +39,43 @@ section {
     border-bottom-style:hidden;
 }
 #buttons {
-    background-color:rgb(250, 249, 249);
+    height: 30vh;
+    justify-content:space-evenly;
+    background-color:rgb(253, 242, 245);
 }
 #aboutus {
-    background-color:rgb(137, 176, 174);
+    flex-direction:column;
+    background-color:rgb(193, 223, 215);
+    padding-bottom:250px;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 #numberone {
-
+    padding-top:3%;
+    padding-bottom:10%;
+    display:flex;
+    flex-direction:row;
+    background-color:rgb(228, 248, 224);
+    border-bottom-style:hidden;
 }
 #numbertwo {
+    padding-top:3%;
+    padding-bottom:10%;
+    display:flex;
+    flex-direction:row;
+    background-color:rgb(193, 223, 215);
 
 }
 #numberthree {
-
+    padding-top:3%;
+    padding-bottom:10%;
+    display:flex;
+    flex-direction:row;
+    background-color:rgb(228, 248, 224);
 }
 p {
     font-family: verdana;
+    color:#091e24;
 }
 h1 {
     font-family: Tahoma;
@@ -50,25 +83,73 @@ h1 {
     font-size:x-large;
 }
 h2 {
+    padding-top: 0.5%;
+    padding-left: 2%;
     font-family: Tahoma;
-    color:#000000;
+    color:#439170;
+
+}
+h3 {
+    font-family: Tahoma;
+    font-size: x-large;
+    color:#c95376;
+}
+h4 {
+    font-family: Tahoma;
+    font-size: x-large;
+    color:#0f6444;
+}
+h5 {
+    font-size:large;
+    padding:3%;
+    font-family: Tahoma;
+    color:#091e24;
+}
+img.wiggleable:hover {
+    animation: wiggle 0.5s;
+    animation-iteration-count:infinite;
+}
+@keyframes wiggle{
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(2deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-2deg);}
+    100% {transform: rotate(0deg);}
 }
 .btn {
-    text-decoration: none;
+    text-decoration:none;
     padding: 25px;
-    right:25%;
-    left:25%;
-    border: 1px solid #ffffff;
-    color:brown;
-    border-radius: 15px;
-    background-color: rgb(255, 214, 186);
+    border: 30px double rgb(253, 242, 245);
+    border-radius: 30px;
+    background-color: rgb(252, 188, 227);
 }
-.headerp {
+.center {
+    text-align:center;
+    display: flexbox;
+    min-width:fit-content;
+}
+.twocolumn {
+    float:right;
+    width:25%;
+    display: table-cell;
+    margin:auto;
+    align-items:center;
     justify-content: center;
-    align-items: center;
-    color:#000000;
 }
-.introp {
-    position:relative;
+.twocolumnimage {
+    display: table-cell;
+    margin:auto;
+    align-items:center;
+}
+.bannerimage {
     justify-content:center;
+    width:500px;
+    height:250px;
+}
+.footertext {
+    color:#439170;
+    min-width:fit-content;
+}
+.wiggleable {
+    filter:drop-shadow(20px 10px 4px #d6a2ad)
 }
