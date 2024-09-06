@@ -1,1 +1,74 @@
+* {
+    padding:0%;
+    margin:0%;
+}
+header {
+    height: 45px;
+    display: flex;
+    background-color:rgb(34, 49, 56);
+}
+section {
+    height: 50vh;
+    display: flex;
+    border-bottom: 5px dashed rgb(216, 155, 24);
+    justify-content: center;
+    align-items: center;
+}
+#intro {
+    background-image: url("pond.jpg");
+    background-repeat: repeat-x;
+}
+#introtext {
+    background-color:#ffffff;
+    opacity: 0.9;
+    border-radius: 15px;
+    height: 150px;
+    width: 350px;
+    border-bottom-style:hidden;
+}
+#buttons {
+    background-color:rgb(250, 249, 249);
+}
+#aboutus {
+    background-color:rgb(137, 176, 174);
+}
+#numberone {
 
+}
+#numbertwo {
+
+}
+#numberthree {
+
+}
+p {
+    font-family: verdana;
+}
+h1 {
+    font-family: Tahoma;
+    color:#2f5f47;
+    font-size:x-large;
+}
+h2 {
+    font-family: Tahoma;
+    color:#000000;
+}
+.btn {
+    text-decoration: none;
+    padding: 25px;
+    right:25%;
+    left:25%;
+    border: 1px solid #ffffff;
+    color:brown;
+    border-radius: 15px;
+    background-color: rgb(255, 214, 186);
+}
+.headerp {
+    justify-content: center;
+    align-items: center;
+    color:#000000;
+}
+.introp {
+    position:relative;
+    justify-content:center;
+}
